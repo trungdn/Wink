@@ -43,10 +43,10 @@ class WinkSmartHomeSkill(MycroftSkill):
         self.register_intent(turn_off_intent,
                              self.handle_turn_off_intent)
 
-    def handle_thank_you_intent(self, message):
+    def handle_turn_on_intent(self, message):
         self.speak_dialog("turning.on")
 
-    def handle_how_are_you_intent(self, message):
+    def handle_turn_off_intent(self, message):
         self.speak_dialog("turning.off")
 
     def stop(self):
